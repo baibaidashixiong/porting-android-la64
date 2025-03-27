@@ -40,6 +40,12 @@
   background-position: center;
 }
 
+@media (max-width: 768px) {
+    .reveal .slides {
+        background-size: contain;
+    }
+}
+
 .reveal section {
   padding: 20px 0;
 }
