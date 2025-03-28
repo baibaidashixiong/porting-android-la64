@@ -315,13 +315,20 @@ PRODUCT_PACKAGES += \
 </div>
 </div>
 <div class="col">
-<li style="font-size: 24px;margin-bottom: 24px;">SurfaceFlinger：类似 X11/Wayland</li>
-<li style="font-size: 24px;margin-bottom: 24px;">openGLES：渲染/软件3D合成</li>
-<li style="font-size: 24px;margin-bottom: 24px;">Hardware Composer：硬件渲染加速</li>
-<li style="font-size: 24px;margin-bottom: 24px;">gralloc：缓冲区分配</li>
-<li style="font-size: 24px;margin-bottom: 24px;">mesa：openGLES 的开源实现</li>
-<li style="font-size: 24px;margin-bottom: 24px;">libdrm：drm的用户空间库</li>
-
+<ul>
+  <li style="font-size: 24px;margin-bottom: 24px;">SurfaceFlinger：类似 X11/Wayland</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">openGLES：渲染/软件3D合成</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">Hardware Composer：硬件渲染加速</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">gralloc：图形缓冲区分配</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">libdrm：drm的用户空间库</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">drm：内核图形驱动框架</li>
+  <li style="font-size: 24px;margin-bottom: 24px;">对应实现
+      <ul>
+          <li style="font-size: 24px;margin-bottom: 24px;">gralloc: minigbm</li>
+          <li style="font-size: 24px;margin-bottom: 24px;">openGLES: mesa</li>
+      </ul>
+  </li>
+</ul>
 </div>
 <!--v-->
 ## 安卓运行时
